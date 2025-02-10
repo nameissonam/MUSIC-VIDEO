@@ -158,10 +158,13 @@
     }
 }
 
+<<<<<<<<< Temporary merge branch 1
 
-/* Footer Styling */
+/* footer styling */
+
 .footer{
     /* border: 2px solid green; */
+    margin-top: 9rem;
     width: 100%;
     color: #fff;
     display: flex;
@@ -175,7 +178,6 @@
     background-size: cover;
     background-position: center;
     height: 400px;
-    margin-top: 9rem;
 }
 
 .footer-left{
@@ -364,8 +366,7 @@
     .footer-incons, .footer-links{
         gap: 1rem;
     }
-}
-
+=========
 @media screen and (max-width:750px){
     
 
@@ -378,4 +379,5 @@
         font-size: 1em;
     }
     
+>>>>>>>>> Temporary merge branch 2
 }
