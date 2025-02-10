@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+AU+VIC+WA+NT+Arrows&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@700&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+/* .header-text{
+    position: fixed;
+} */
+
+.header-text h1 {
+    color: rgb(17, 225, 236);
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 900;
+    font-size: 2.4em;
+    padding: 10px; 
+    border-bottom: 1px solid #ffffff30;
+}
+    
+.header-text span{
+    color: rgb(255, 0, 140);
+}
+
+.navbar {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: .3rem; */
+    padding: .5rem;
+    position: fixed;
+    width: 98%;
+    color: #fff;
+    z-index: 1000;
+    /* margin: 5em; */
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.logo img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span{
+    color: rgb(255, 0, 140);
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 900;
+    font-size: 2.4em;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 20px;
+}
+
+/* .hidden{
+
+} */
+
+.common-a {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.search input{
+    height: 35px;
+    width: 200px;
+    border-radius: 1rem;
+    outline: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #414141d9;
+    border: none;
+    color: #d1d1d1;
+}
+
+.search-btn{
+    height: 33px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 140);
+    /* background-color: rgb(238, 75, 0); */
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.search-btn:hover{
+    transform: scale(0.95);
+    background-color: rgb(238, 75, 0);
+}
+
+.search i{
+    font-size: 1.1rem;
+    color: #dddddd;
+}
+
+.login{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(238, 75, 0);
+}
+
+.login a{
+    font-size: 1.3rem;
+    padding: .2rem .9rem;
+    border: .5px solid white;
+    border-radius: 1rem;
+}
+
+.ham{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.menu-toggle i {
+    font-size: 24px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+}
+
+
+
+
+
+.blank{
+    margin-bottom: 8rem;
+}
+
+
+
+
+
+
+
+.container{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* margin-top: 5rem; */
+}
+
+.content{
+    border: 2px solid green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left{
+    border: 1px solid white;
+    width: 15%;
+    padding: 2rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links a{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.content-right{
+    border: 2px solid yellow;
+    width: 80%;
+    /* background-color: brown; */
+    background-image: url(./img/girl1.jpg);
+    height: 600px;
+}

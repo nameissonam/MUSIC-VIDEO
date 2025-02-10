@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    width: 90%;
+    height: 100%;
+    border: 2px solid white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-box{
+    width: 20%;
+    height: 85%;
+    border: 2px solid grey;
+}
+
+.right-box{
+    width: 80%;
+    height: 85%;
+    border: 2px solid yellow;
+}
+
+.bottom-box{
+    width: 100%;
+    height: 15%;
+    border: 2px solid red;
+}
+
+.left-box h1{
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 1em;
+    color: white;
+}
+
+.playlist h4{
+    color: grey;
+    margin: 1em;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+    transition: 0.3s linear;
+}
+
+.playlist h4:hover{
+    color: white;
+}
+
+
+
+.playlist i{
+    padding: 0.3em;
+}
+
+.playlist h4 span{
+    position: relative;
+    margin-right: 1em;
+}
+
+.playlist h4 span::before{
+    content: " ";
+    position: absolute;
+    width: 4px;
+    height:4px ;
+    border:2px solid grey ;
+    border-radius: 50%;
+    top: 7px;
+    transition: 0.3s linear;
+    
+}
+
+.playlist h4:hover span::before{
+    border: 2px solid white;
+}
+
+.playlist h4 i{
+   display: none;
+}
+
+.playlist .active{
+    color: aqua;
+}
+
+.playlist .active span{
+    display: none;
+}
+
+.playlist .active i{
+    /* display: flex; */
+    margin-right: 1.2em;
+}
