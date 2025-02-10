@@ -8,9 +8,21 @@
 }
 
 .container{
-    height: 100vh;
-    width: 100vw;
+    /* height: 100%; */
+    width: 100%;
     background: black;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.nav{
+    /* border: 2px solid red; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .header-text h1 {
@@ -25,6 +37,7 @@
     
 .header-text span{
     color: rgb(255, 0, 140);
+    margin-left: .3rem;
 }
 
 .navbar {
@@ -32,13 +45,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-top: .3rem; */
-    padding: .5rem;
-    position: fixed;
-    width: 98%;
+    padding: .5rem 1rem;
     color: #fff;
-    z-index: 1000;
-    
+    margin: 0;
 }
 
 .right-nav{
@@ -69,14 +78,8 @@
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 }
-.nav-links li {
-    margin: 0 20px;
-}
-
-/* .hidden{
-
-} */
 
 .common-a {
     color: white;
@@ -87,6 +90,18 @@
     display: flex;
     align-items: center;
     gap: .2rem;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.search{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
 }
 
 .search input{
@@ -103,8 +118,8 @@
 }
 
 .search-btn{
-    height: 33px;
-    width: 40px;
+    height: 30px;
+    width: 33px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -112,7 +127,7 @@
     background-color: rgb(255, 0, 140);
     /* background-color: rgb(238, 75, 0); */
     border: none;
-    border-radius: .6rem;
+    border-radius: .4rem;
     cursor: pointer;
     transition: all .2s;
 }
@@ -128,9 +143,14 @@
 }
 
 .login{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(238, 75, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-left: .6rem;
 }
 
 .login a{
@@ -138,33 +158,216 @@
     padding: .2rem .9rem;
     border: .5px solid white;
     border-radius: 1rem;
+    align-self: center;
 }
 
 .ham{
     font-size: 2rem;
     display: none;
     cursor: pointer;
+    margin-left: 1rem;
 }
-.menu-toggle i {
-    font-size: 24px;
-    color: white;
+
+.hidden{
+    position: fixed;
+    top: 135px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* border-radius: .8rem; */
+    width: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    display: none;
 }
-@media screen and (max-width: 768px) {
-    .nav-links {
+
+.hidden-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* padding: 2rem; */
+    list-style: none; 
+}
+
+.hidden a{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.hidden-search{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    /* display: none; */
+}
+
+.hidden-search input{
+    height: 35px;
+    width: 200px;
+    border-radius: 1rem;
+    outline: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #414141d9;
+    border: none;
+    color: #d1d1d1;
+}
+
+.hide-search-btn{
+    height: 33px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 140);
+    /* background-color: rgb(238, 75, 0); */
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: all .2s;
+    display: none;
+}
+
+.hide-search-btn:hover{
+    transform: scale(0.95);
+    background-color: rgb(238, 75, 0);
+    /* display: none; */
+}
+
+.hide-search-btn i{
+    color: #fff;
+}
+
+.cross{
+    font-size: 2rem;
+    position: relative;
+    bottom: -30px;
+}
+
+
+/* Navbar Responsiveness */
+@media(max-width:1100px){
+    .nav-links{
         display: none;
     }
+
     .ham{
         display: block;
     }
 }
 
-<<<<<<<<< Temporary merge branch 1
+@media(max-width:765px){
+    .search input{
+        display: none;
+    }
+
+    .search-btn{
+        display: none;
+    }
+
+    .hide-search-btn{
+        display: block;
+    }
+
+    .login p{
+        display: none;
+    }
+
+    .sign{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .hidden-links{
+        gap: 2rem;
+    }
+
+    .header-text h1{
+        font-size: 1.7rem;
+    }
+
+    .hidden{
+        top: 120px;
+    }
+
+    .hero-section{
+        margin: -3rem;
+    }
+}
+
+@media(max-width:500px){
+    .ham{
+        margin-left: .5rem;
+    }
+
+    .logo img{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .logo span{
+        font-size: 1.3rem;
+    }
+
+    .hide-search-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 1.1rem;
+    }
+
+    .login .log{
+        font-size: 1.1rem;
+    }
+
+    .ham{
+        font-size: 1.7rem;
+    }
+
+    .hidden{
+        padding: 1rem;
+    }
+
+    .cross{
+        bottom: -15px;
+    }
+
+    .hidden-links a{
+        font-size: 1.1rem;
+    }
+
+    .hero-section{
+        margin: -3.5rem;
+    }
+}
+
+@media(max-width:350px){
+    .header-text h1{
+        font-size: 1.5rem;
+    }
+
+    .hidden-links{
+        gap: 1.3rem;
+    }
+}
+
+
+.hero-section{
+    margin-top: 8rem;
+}
+
+
 
 /* footer styling */
-
 .footer{
     /* border: 2px solid green; */
-    margin-top: 9rem;
     width: 100%;
     color: #fff;
     display: flex;
@@ -178,6 +381,7 @@
     background-size: cover;
     background-position: center;
     height: 400px;
+    margin-top: 6rem;
 }
 
 .footer-left{
@@ -185,7 +389,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 2rem;
 }
 
@@ -193,7 +396,7 @@
     font-size: 3rem;
     font-family: "Lobster", serif;
     font-weight: 400;
-    color: rgb(255, 0, 140);
+    color: rgb(207, 22, 130);
 }
 
 .footer-para{
@@ -208,7 +411,6 @@
 .footer-incons{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 3rem;
     font-size: 2.3rem;
 }
@@ -260,7 +462,7 @@
 .logout{
     margin-left: .5rem;
     font-size: 1.4rem;
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 
 .logout:hover{
@@ -352,12 +554,21 @@
     .footer{
         padding: 2rem .5rem;
     }
-    .nav-links.active {
-        display: flex;
+
+    .footer-left, .footer-right{
+        width: 99.5%;
+    }
+
+    .footer-incons{
+        gap: 2rem;
     }
 
     .footer-links .logout{
         display: none;
+    }
+
+    .footer-heading{
+        font-size: 2.4rem;
     }
 }
 
@@ -366,18 +577,4 @@
     .footer-incons, .footer-links{
         gap: 1rem;
     }
-=========
-@media screen and (max-width:750px){
-    
-
-    .profile a{
-        font-size: 1.2em;
-        margin-right: 10px;
-    }
-
-    .profile i{
-        font-size: 1em;
-    }
-    
->>>>>>>>> Temporary merge branch 2
 }
