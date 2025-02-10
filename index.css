@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+}
+
+.slidebar{
+    width: 300px;
+    border: 2px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.lib{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

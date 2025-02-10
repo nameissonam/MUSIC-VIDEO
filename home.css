@@ -35,10 +35,16 @@
     /* margin-top: .3rem; */
     padding: .5rem;
     position: fixed;
-    width: 100%;
+    width: 98%;
     color: #fff;
     z-index: 1000;
-    /* border-bottom: 1px solid #ffffff30 ; */
+    
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -46,7 +52,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    /* border-right: 1px solid #ffffff30 ; */
+    
 }
 .logo img {
     height: 50px;
@@ -63,7 +69,9 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+}
+.nav-links li {
+    margin: 0 20px;
 }
 
 /* .hidden{
@@ -74,25 +82,8 @@
     color: white;
     font-size: 1.4em;
     font-weight: 400;
-    transition: all .2s linear;
 }
-
-.common-a:hover{
-    color: #f5a40d;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: .3rem .6rem;
-    border-radius: .3rem;
-}
-
-.nav-right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 0 1rem;
-}
-
-.search{
+.nav-icons {
     display: flex;
     align-items: center;
     gap: .2rem;
@@ -152,12 +143,14 @@
 .ham{
     font-size: 2rem;
     display: none;
+    cursor: pointer;
 }
-
-
-/* Navbar Responsiveness */
-@media(max-width: 1100px){
-    .nav-links{
+.menu-toggle i {
+    font-size: 24px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
         display: none;
     }
     .ham{
@@ -357,13 +350,8 @@
     .footer{
         padding: 2rem .5rem;
     }
-
-    .footer-left, .footer-right{
-        width: 99.5%;
-    }
-
-    .footer-incons{
-        gap: 2rem;
+    .nav-links.active {
+        display: flex;
     }
 
     .footer-links .logout{
@@ -376,4 +364,18 @@
     .footer-incons, .footer-links{
         gap: 1rem;
     }
+}
+
+@media screen and (max-width:750px){
+    
+
+    .profile a{
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+
+    .profile i{
+        font-size: 1em;
+    }
+    
 }
