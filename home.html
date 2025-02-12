@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
@@ -21,7 +22,7 @@
                 <h1>The Bang<span>VIBEZILLA</span></h1>
             </div>
             <nav class="navbar">
-                <div class="logo"> 
+                <div class="logo">
                     <img src="./img/vibezilla.webp" alt="Spotify Logo">
                     <span>Vibezilla</span>
                 </div>
@@ -31,7 +32,7 @@
                     <li><a href="#" class="common-a">Songs</a></li>
                     <li><a href="#" class="common-a">Videos</a></li>
                 </ul>
-                
+
                 <div class="hidden" id="hidden">
                     <ul class="hidden-links">
                         <li><a href="#" class="common-a">Home</a></li>
@@ -39,21 +40,22 @@
                         <li><a href="#" class="common-a">Songs</a></li>
                         <li><a href="#" class="common-a">Videos</a></li>
                     </ul>
-    
+
                     <div class="hidden-search">
                         <input type="text" placeholder="Serch here...">
                         <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-    
+
                     <i class="fa-solid fa-angle-up cross" id="cross"></i>
                     <!-- <i class="fa-solid fa-xmark"></i> -->
                 </div>
-    
+
                 <div class="nav-right">
                     <div class="search" id="search">
                         <input type="text" placeholder="Serch here...">
                         <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button class="hide-search-btn" id="hide-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="hide-search-btn" id="hide-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="login">
                         <a href="#" class="common-a log">Login</a>
@@ -68,18 +70,61 @@
         <div class="hero-section">
         </div>
 
+        <div class="background">
+            <div class="back-top">
+                <div class="back-left">
+                    <img src="https://png.pngtree.com/png-vector/20220926/ourmid/pngtree-colorful-musical-design-png-image_6217758.png"
+                        alt="">
+
+                    <!-- <img src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-a-girl-wearing-headphones-in-vector-art-png-image_12850816.png" alt="" > -->
+
+                    <!-- <img src="https://png.pngtree.com/png-vector/20230922/ourmid/pngtree-color-music-free-illustration-png-image_10144167.png" alt="" > -->
+                </div>
+                <div class="back-right">
+                    <p class="feel">Artist feel you</p>
+                    <h3 class="rythm">Happy Rythem of Life</h3>
+
+                    <p class="vision">Feel the Beat, See the Vision</p>
+                    <p class="back-para">Dive into a world where sound and visuals collide. From the rhythm of your
+                        favorite tracks to the magic of cinematic storytelling, we bring you the pulse of creativity.
+                        Discover new artists, explore stunning visuals, and lose yourself in the art of music and
+                        motion.</p>
+                </div>
+            </div>
+
+            <div class="back-bottom">
+                <audio src="./audio/Kissik - Pushpa 2 The Rule 320 Kbps.mp3" id="player"></audio>
+                <div class="player">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn"></i>
+                    </div>
+                    <div class="info">
+                        Kissik - Pushpa 2 The Rule
+                        <div class="bar">
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+
+                    <div id="current">0:00</div>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
             <div class="footer-left">
                 <div class="footer-name">
                     <h2 class="footer-heading">VIBEZILLA</h2>
-                    <h2 class="footer-para">Unleashing the ultimate music and video experience, where every beat vibes louder! 🔥🎶</h2>
+                    <h2 class="footer-para">Unleashing the ultimate music and video experience, where every beat vibes
+                        louder! 🔥🎶</h2>
                 </div>
                 <div class="footer-incons">
                     <!-- <i class="ri-video-line"></i> -->
                     <i class="ri-play-line"></i>
                     <i class="ri-music-line"></i>
-                    <img src="https://png.pngtree.com/png-clipart/20180518/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3571406.png" alt="instagram" height="30px">
-                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" alt="instagram" class="facebook">
+                    <img src="https://png.pngtree.com/png-clipart/20180518/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3571406.png"
+                        alt="instagram" height="30px">
+                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                        alt="instagram" class="facebook">
                     <img src="https://cdn-icons-png.flaticon.com/512/3670/3670166.png" alt="instagram" class="snap">
                 </div>
             </div>
@@ -91,7 +136,7 @@
                     <a href="home.html">Logout <i class="fa-solid fa-arrow-right-from-bracket logout"></i></a>
                 </div>
                 <div class="fr-content">
-                    <div class="email fr-common">                    
+                    <div class="email fr-common">
                         <i class="fa-regular fa-envelope"></i>
                         vibezilla123@gmail.com
                     </div>
@@ -106,5 +151,7 @@
 
     <script src="home.js">
     </script>
+    <script src="music.js"></script>
 </body>
+
 </html>
