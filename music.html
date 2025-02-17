@@ -9,6 +9,56 @@
 </head>
 <body>
     <div class="container">
+        <div class="nav">
+            <div class="header-text">
+                <h1>The Bang<span>VIBEZILLA</span></h1>
+            </div>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./img/vibezilla.webp" alt="Spotify Logo">
+                    <span>Vibezilla</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" class="common-a">Home</a></li>
+                    <li><a href="#" class="common-a">About-Us</a></li>
+                    <li><a href="#" class="common-a">Songs</a></li>
+                    <li><a href="#" class="common-a">Videos</a></li>
+                </ul>
+
+                <div class="hidden" id="hidden">
+                    <ul class="hidden-links">
+                        <li><a href="#" class="common-a">Home</a></li>
+                        <li><a href="#" class="common-a">About-Us</a></li>
+                        <li><a href="#" class="common-a">Songs</a></li>
+                        <li><a href="#" class="common-a">Videos</a></li>
+                    </ul>
+
+                    <div class="hidden-search">
+                        <input type="text" placeholder="Serch here...">
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <i class="fa-solid fa-angle-up cross" id="cross"></i>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+
+                <div class="nav-right">
+                    <div class="search" id="search">
+                        <input type="text" placeholder="Serch here...">
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="hide-search-btn" id="hide-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="common-a log">Login</a>
+                        <!-- <p>|</p> -->
+                        <a href="#" class="common-a sign">Sign up</a>
+                    </div>
+                    <i class="ri-menu-4-line ham" id="ham"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="blank-line"></div> -->
         <div class="header">
             <div class="left-box">
                 <h1>Your Playlist</h1>
@@ -30,219 +80,486 @@
                     </h4>       
                     
                 </div>
-                <div class="song-menu">
+                <div class="song-menu"> 
                     <li class="song-item">
                         <span>1</span>
-                        <img src="./img/jaiho.jpg" alt="">
+                        <img src="./img/1.jpg" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="1"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
-                        <img src="./img/jaiho.jpg" alt="">
+                        <span>2</span>
+                        <img src="./img/2.jpg" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="2"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>3</span>
+                        <img src="./img/yehjodeshhaimera.jpg" alt="">
+                        <h5>On my way <br>
+                            <div class="subtitle">
+                                Alan Walker
+                            </div>
+                        </h5>
+                        <i class="fa-solid fa-circle-play playlistplay" id="3"></i>
+                    </li>
+                    <li class="song-item">
+                        <span>4</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="4"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>5</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="5"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>6</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="6"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>7</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="7"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>8</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="8"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>9</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="9"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>10</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="10"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>11</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="11"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>12</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="12"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>13</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="13"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>14</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="14"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>15</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="15"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>16</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="16"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>17</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="17"></i>
                     </li>
+                    
                     <li class="song-item">
-                        <span>1</span>
+                        <span>18</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="18"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>19</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="19"></i>
                     </li>
                     <li class="song-item">
-                        <span>1</span>
+                        <span>20</span>
                         <img src="" alt="">
                         <h5>On my way <br>
                             <div class="subtitle">
                                 Alan Walker
                             </div>
                         </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
-                    </li>
-                    <li class="song-item">
-                        <span>1</span>
-                        <img src="" alt="">
-                        <h5>On my way <br>
-                            <div class="subtitle">
-                                Alan Walker
-                            </div>
-                        </h5>
-                        <i class="fa-solid fa-circle-play playlistplay"></i>
+                        <i class="fa-solid fa-circle-play playlistplay" id="20"></i>
                     </li>
                 </div>
             </div>
             <div class="right-box">
+                <img src="./img/music-bg-1.jpg" class="bg-img" alt="">
+                <div class="content">
+                    <h1>Alen walker fade</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolorum id atque amet. Eveniet aut at sunt nisi vitae repudiandae?</p>
+                    <div class="buttons">
+                        <button class="music-btn" id="play">play</button>
+                        <button class="music-btn" id="follow">follow</button>
+                    </div>
+                    <div class="popular-songs">
+                        <div class="psh4">
+                            <h4>
+                                popular-songs
+                            </h4>
+                            <div class="ps-btn">
+                                <i class="fa-solid fa-arrow-left" id="pop_song_left"></i>
+                                <i class="fa-solid fa-arrow-right" id="pop_song_right"></i>
+                            </div>
+                        </div>
+                        <div class="pop_song">
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/1.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="21"></i>
+                                </div>
+                                <h5 class="pop_text">Jai Ho <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/2.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="22"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/yehjodeshhaimera.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="23"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="24"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="24"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="25"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="26"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="27"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="28"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="29"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="30"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="31"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="32"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="33"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="34"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                            <li class="song-item">
+                                <div class="img-play">
+                                    <img src="./img/jaiho.jpg" alt="">
+                                    <i class="fa-solid fa-circle-play playlistplay" id="35"></i>
+                                </div>
+                                <h5>On my way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                                
+                            </li>
+                        </div>
+                    </div>
+                    <div class="popular-artist">
+                        <div class="psh4">
+                            <h4>
+                                popular-artist
+                            </h4>
+                            <div class="ps-btn">
+                                <i class="fa-solid fa-arrow-left" id="pa_left"></i>
+                                <i class="fa-solid fa-arrow-right" id="pa_right"></i>
+                            </div>
+                        </div>
 
+                        <div class="pa_items">
+                            <li>
+                                <img src="./img/1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/jaiho.jpg" alt="">
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
             <div class="bottom-box">
-                <div class="wave">
+                <div class="wave" id="bb_wave">
                     <div class="wave1"></div>
                     <div class="wave1"></div>
                     <div class="wave1"></div>
                 </div>
-                <img src="./img/jaiho.jpg" alt="" id="poster-master-play">
+                <img src="./img/1.jpg" alt="" id="poster_master_play">
                 <h5 id="title">
                     Jai Ho
                     <div class="subtitle">A R Rahman</div>
@@ -250,11 +567,12 @@
                 <div class="icon">
                     <i class="fa-solid fa-music shuffle">next</i>
                     <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-play" id="bb_play"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-solid fa-play"></i>
+                    
                     <i class="fa-solid fa-cloud-arrow-down" id="download-music"></i>
                 </div>
-                <span id="current-start">0:00</span>
+                <span id="currentStart">0:00</span>
                 <div class="bar">
                     <input type="range" id="seek" min="0" max="100">
                     <div class="bar2" id="bar2"></div>
@@ -262,7 +580,7 @@
                     
                     
                 </div>
-                <span id="current-end">0:30</span>
+                <span id="currentEnd">0:30</span>
                 <div class="vol">
                     <i class="fa-solid fa-volume-high"></i>
                     <input type="range" min="0" max="100" id="vol">
@@ -272,6 +590,46 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="footer-name">
+                    <h2 class="footer-heading">VIBEZILLA</h2>
+                    <h2 class="footer-para">Unleashing the ultimate music and video experience, where every beat vibes
+                        louder! 🔥🎶</h2>
+                </div>
+                <div class="footer-incons">
+                    <!-- <i class="ri-video-line"></i> -->
+                    <i class="ri-play-line"></i>
+                    <i class="ri-music-line"></i>
+                    <img src="https://png.pngtree.com/png-clipart/20180518/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3571406.png"
+                        alt="instagram" height="30px">
+                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                        alt="instagram" class="facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670166.png" alt="instagram" class="snap">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Songs</a>
+                    <a href="home.html">Logout <i class="fa-solid fa-arrow-right-from-bracket logout"></i></a>
+                </div>
+                <div class="fr-content">
+                    <div class="email fr-common">
+                        <i class="fa-regular fa-envelope"></i>
+                        vibezilla123@gmail.com
+                    </div>
+                    <div class="contact fr-common">
+                        <i class="ri-phone-line"></i>
+                        +91-000-0000-000
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="main-music.js"></script>
     </div>
 </body>
 </html>
