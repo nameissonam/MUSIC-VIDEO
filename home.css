@@ -637,17 +637,30 @@
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: space-between; */
-    padding: 1rem 3rem;
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+}
+
+.songs-container video{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0px;
+    /* height: 90%; */
+    /* width: 100%; */
 }
 
 .songs-top{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0 3rem;
 }
 
 .heading{
     align-self: center;
+    z-index: 600;
 }
 
 .songs{
@@ -677,7 +690,8 @@
     gap: 1.5rem;
     padding: 1rem;
     width: 48%;
-    background-color: #32323d;
+    /* background-color: #32323d; */
+    background-color: rgba(34, 34, 34, 0.7);
     border-radius: .8rem;
     /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
 }
@@ -747,7 +761,8 @@
 
 .songs-right{
     /* background-color: #202026; */
-    background-color: #32323d;
+    /* background-color: #32323d; */
+    background-color: rgba(34, 34, 34, 0.7);
     width: 48%;
     padding: 1rem;
     display: flex;
@@ -808,6 +823,185 @@
 
 i{
     cursor: pointer;
+}
+
+/* songs section Responsiveness */
+
+/* @media (min-aspect-ratio: 16/9){
+    .songs-container video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-aspect-ratio: 16/9){
+    .songs-container video{
+        width: auto;
+        height: 100%;
+    }
+} */
+
+
+
+/* Login Section Styling */
+.login-container{
+    /* border: 2px solid red; */
+    margin-top: 3rem;
+    height: 630px;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 13%;
+    /* background: #111; */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.login-card{
+    font-family: roboto, sans-serif;
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 600px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: rgba(1, 8, 81, 0.594);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    animation: logincard 2s linear 0s forwards;
+}
+
+@keyframes logincard{
+    0%{
+        transform: scale(-1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-heading{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.input-box{
+    width: 280px;
+    border-bottom: 1px solid #fff;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* color: #fff; */
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -8px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    /* padding: 0 1rem 0 .2rem; */
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    /* color: #fff; */
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.remember-forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    font-size: 1.7rem;
+    margin-right: .1rem;
+    cursor: pointer;
+}
+
+.remember-forgot a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+
+.remember-forgot a:hover,
+.login-para a:hover{
+    color: rgb(255, 113, 47);
+}
+
+.login-btn{
+    width: 30%;
+    align-self: center;
+    margin: 2rem 0 1rem 0;
+    padding: .4rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(74, 9, 45);
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.login-btn:hover{
+    background-color: rgb(238, 75, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.register-link{
+    align-self: center;
+    font-size: 1.1rem;
+}
+
+.login-para a{
+    margin-left: .1rem;
+    color: #fff;
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+
+/* Login Responsiveness */
+@media(max-width: 350){
+    .login-card{
+        width: 300px;
+    }
 }
 
 
