@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="nav">
             <div class="header-text">
                 <h1>The Bang<span>VIBEZILLA</span></h1>
@@ -58,9 +58,9 @@
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="login">
-                        <a href="#" class="common-a log">Login</a>
+                        <a href="#" class="common-a log" id="login">Login</a>
                         <!-- <p>|</p> -->
-                        <a href="#" class="common-a sign">Sign up</a>
+                        <a href="#" class="common-a sign" id="sign-up">Sign up</a>
                     </div>
                     <i class="ri-menu-4-line ham" id="ham"></i>
                 </div>
@@ -70,7 +70,7 @@
         <div class="hero-section">
         </div>
 
-        <div class="background">
+        <div class="background" id="background">
             <div class="back-top">
                 <div class="back-left">
                     <img src="https://png.pngtree.com/png-vector/20220926/ourmid/pngtree-colorful-musical-design-png-image_6217758.png"
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="back-bottom">
+            <div class="back-bottom" id="backbot">
                 <audio src="./audio/Kissik - Pushpa 2 The Rule 320 Kbps.mp3" id="player"></audio>
                 <div class="player">
                     <div class="control">
@@ -111,13 +111,16 @@
         </div>
 
         <div class="songs-container">
+            <video autoplay loop muted plays-inline>
+                <source src="./img/video7.mp4" type="video/mp4">
+            </video>
             <div class="songs-top">
                 <div class="heading">
                     <p class="songs">Melodies That Touch the Heart</p>
                     <div class="blank"></div>
                 </div>
                 <div class="songs-top-content">
-                    <div class="songs-left">
+                    <div class="songs-left" data-tilt data-tilt-glare>
                         <div class="songs-right-top">
                             <p class="songs-trending">Trending Songs</p>
                             <a href="#" class="see-all">See all</a>
@@ -206,7 +209,7 @@
                         </div>
                         <!-- <a href="#" class="see">See all</a> -->
                     </div>
-                    <div class="songs-right">
+                    <div class="songs-right" data-tilt data-tilt-glare>
                         <div class="songs-right-top">
                             <p class="songs-trending">Top Songs</p>
                             <a href="#" class="see-all">See all</a>
@@ -293,6 +296,37 @@
             </div>
         </div>
 
+        <div class="login-container" id="login-container">
+            <!-- <div class="login-content"> -->
+                <div class="login-card">
+                    <form action="" class="form">
+                        <h2 class="login-heading">Login</h2>
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-mail-line"></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-lock-2-fill"></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="login-btn">Login</button>
+                        <div class="register-link">
+                            <p class="login-para">
+                                Don't have an account? <a href="#">Sign-Up</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            <!-- </div> -->
+        </div>
+
         <footer class="footer">
             <div class="footer-left">
                 <div class="footer-name">
@@ -335,6 +369,7 @@
     <script src="home.js">
     </script>
     <script src="music.js"></script>
+    <!-- <script src="footer.js"></script> -->
 </body>
 
 </html>
