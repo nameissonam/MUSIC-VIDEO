@@ -825,7 +825,46 @@ i{
     cursor: pointer;
 }
 
-/* songs section Responsiveness */
+/* Songs Container section Responsiveness */
+
+@media(max-width: 950px){
+    .songs-container{
+        height: 100%;
+    }
+
+    .songs-top-content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .songs-left, .songs-right{
+        width: 99%;
+    }
+}
+
+@media(max-width: 500px){
+    .songs-top{
+        padding: 0 .8rem;
+    }
+
+    .songs-left, .songs-right{
+        width: 100%;
+    }
+
+    .songs{
+        font-size: 1.5rem;
+    }
+
+    .blank{
+        width: 335px;
+    }
+}
+
+@media(max-width: 450px){
+    .song-time{
+        display: none;
+    }
+}
 
 /* @media (min-aspect-ratio: 16/9){
     .songs-container video{
@@ -999,7 +1038,7 @@ i{
 
 /* Login Responsiveness */
 @media(max-width: 350){
-    .login-card{
+    .login-card, .sign-card{
         width: 300px;
     }
 }
@@ -1042,6 +1081,185 @@ i{
     width: 80%;
     padding: .6rem 0;
 }
+
+
+/* Song Container1 Section Styling */
+.songs-container1{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 2rem;
+    /* display: flex; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    font-family: 'roboto', sans-serif;
+    /* margin-top: 3rem; */
+    padding: 5rem 2rem 3rem 2rem;
+    background-color: #45458521;
+}
+
+.sc-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scl-top{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+}
+
+.scl-top i{
+    color: #ff9500;
+}
+
+.scl-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scl-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.225);
+    padding-bottom: 1rem;
+}
+
+.scl-box-top{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.count{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.up-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon1{
+    color: rgb(131, 217, 0);
+    font-size: 1.1rem;
+}
+
+.icon2{
+    color: rgb(239, 40, 40);
+    font-size: 1.1rem;
+}
+
+.song-description{
+    color: #bcbcbc;
+}
+
+.scl-img{
+    height: 40px;
+    width: 60px;
+    position: relative;
+    overflow: hidden;
+    margin-right: .3rem;
+}
+
+.scl-img i{
+    font-size: 1.5rem;
+    color: rgba(51, 83, 134, 0.4);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    cursor: pointer;
+    /* opacity: 0; */
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.scl-img i:hover{
+    color: #fff;
+}
+
+.scl-img img{
+    height: 40px;
+    width: 60px;
+    border-radius: .3rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.scl-img .dark{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0; */
+    /* z-index: -2; */
+}
+
+/* .scl-img img:hover .dark{
+    opacity: 1;
+    z-index: 4;
+} */
+
+/* Songs Container1 Responsiveness */
+@media(max-width:900px){
+    .songs-container1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sc-right{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .songs-container1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sc-right{
+        display: flex;
+    }
+}
+
+/* Alert Message Styling */
+.alert-container{
+    width: 400px;
+    height: 200px;
+    /* background-color: #202026; */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    display: none;
+}
+
+.alert-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: cursive;
+    color: #ffffff;
+}
+
 
 /* footer styling */
 .footer{
