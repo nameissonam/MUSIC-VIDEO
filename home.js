@@ -56,6 +56,7 @@ backgroundEle.addEventListener('click', () => {
     LoginContEle.style.display = 'none';
     MusicKissik.style.display = 'block';
     signupContEle.style.display = 'none';
+    AlertContEle.style.display = 'none';
 })
 
 SignupLinkEle.addEventListener('click', () => {
