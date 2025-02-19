@@ -851,7 +851,7 @@ i{
     width: 70%;
     margin: 0 auto;
     position: absolute;
-    top: 0px;
+    top: -100px;
     left: 13%;
     /* background: #111; */
     /* background-color: rgba(0, 0, 0, 0.7); */
@@ -1004,6 +1004,44 @@ i{
     }
 }
 
+
+/* SignUp Section Styling */
+.sign-container{
+    /* border: 2px solid red; */
+    margin-top: 3rem;
+    height: 700px;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: -100px;
+    left: 13%;
+    /* background: #111; */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.sign-card{
+    font-family: roboto, sans-serif;
+    /* border: 1px solid white; */
+    height: 450px;
+    width: 600px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: rgba(1, 8, 81, 0.594);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    animation: logincard 2s linear 0s forwards;
+}
+
+.signup-btn{
+    width: 80%;
+    padding: .6rem 0;
+}
 
 /* footer styling */
 .footer{
