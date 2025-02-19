@@ -6,8 +6,12 @@ const searchEle = document.querySelector('#search');
 const hideEle = document.querySelector('#hide-btn');
 const searchbtn = document.querySelector('.search-btn');
 const LoginEle = document.getElementById("login");
+const SignupEle = document.getElementById("sign-up");
 const LoginContEle = document.getElementById("login-container");
+const signupContEle = document.getElementById("sign-container");
 const MusicKissik = document.getElementById('backbot');
+const SignupLinkEle = document.getElementById('signup-link');
+const LoginLinkEle = document.getElementById('login-link');
 
 
 hamburger.addEventListener('click', () => {
@@ -36,9 +40,25 @@ LoginEle.addEventListener('click', () => {
     MusicKissik.style.display = 'none';
 })
 
+SignupEle.addEventListener('click', () => {
+  signupContEle.style.display = 'flex';
+    MusicKissik.style.display = 'none';
+})
+
 backgroundEle.addEventListener('click', () => {
     LoginContEle.style.display = 'none';
     MusicKissik.style.display = 'block';
+    signupContEle.style.display = 'none';
+})
+
+SignupLinkEle.addEventListener('click', () => {
+  signupContEle.style.display = 'flex';
+  LoginContEle.style.display = 'none';
+})
+
+LoginLinkEle.addEventListener('click', () => {
+  signupContEle.style.display = 'none';
+  LoginContEle.style.display = 'flex';
 })
 
 
